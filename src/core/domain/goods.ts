@@ -4,6 +4,6 @@ export type Goods = {
   price: PriceCent;
 }
 
-export function totalPrice(goods: Goods[]): Number {
+export function totalPrice(goods: Goods[]): number {
   return goods.reduce((total, item) => total + item.price, 0)
 }
